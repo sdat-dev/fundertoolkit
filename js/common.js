@@ -1,4 +1,4 @@
-let sidemenuItems = [{"item":"Proposal Preparation","link":"proposalpreparation.html"},{"item":"Library Resources","link":"libraryresources.html"},{"item":"Video Resources","link":"videoresources.html"},{"item":"Talk to a Program Officer","link":"talktoaprogramofficer.html"}]
+let sidemenuItems = [{"item":"Funder Toolkit (NEW)","link":"home.html","subItems":[{"item":"Proposal Preparation","link":"proposalpreparation.html"},{"item":"Library Resources","link":"libraryresources.html"},{"item":"Video Resources","link":"videoresources.html"},{"item":"Talk to a Program Officer","link":"talktoaprogramofficer.html"}]}]
 //SideMenu Start
 //What evet written  before '//SideMenu Start' will be relace with sidemenuItems in automation scripts
 
@@ -235,7 +235,7 @@ let getContent = function (webelements){
                 logostart = false;
             }
             content += '<div class = "col-xl-4 col-lg-4 col-md-4">' +
-                '<a target = "_blank" href = "' + element.source + '">' +
+                '<a href = "' + element.source + '">' +
                 '<div class = "home-logo-container">' +
                 '<img class = "home-logo" src = "assets/images/' + element.logo + '">' +
                 '<p>' + element.content + '</p>' +
