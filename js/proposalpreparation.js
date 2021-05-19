@@ -115,7 +115,6 @@ datarequest.onload = function () {
     { Name: 'Substance Abuse and Mental Health Services Administration (SAMHSA)', Acronym: 'SAMHSA' },
     { Name: 'U.S. Department of Agriculture (USDA)', Acronym: 'USDA' }];
     const proposalGuidances = datarequest.response;
-    console.log("proposalGuidances", proposalGuidances);
     //condition for checking if browser is Internet Explorer
     let proposalGuidance = ((false || !!document.documentMode)) ? JSON.parse(proposalGuidances) : proposalGuidances;
     let distinctAgencies = getDistinctAttributes(proposalGuidance, 'agency');
